@@ -30,6 +30,7 @@ gem 'bower-rails'
 gem 'sass', '3.2.19'
 # Heroku dependencies
 gem 'foreman'
+gem 'rb-readline'
 group :production, :staging do
   gem 'rails_12factor'
   gem 'rails_stdout_logging'
