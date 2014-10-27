@@ -1,0 +1,7 @@
+{
+  "name": "calorisaur",
+  "dependencies": {
+    "angular": "1.x",
+    "bootstrap-sass-official": "3.x"
+  }
+}

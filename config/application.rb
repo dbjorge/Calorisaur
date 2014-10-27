@@ -23,6 +23,17 @@ module Calorisaur
     config.assets.paths << Rails.root.join("vendor", "assets", "bower_components")
     config.assets.paths << Rails.root.join("vendor", "assets", "bower_components", "bootstrap-sass-official", "assets", "fonts")
 
-    config.assets.precompile << %r(.*.(?:eot|svg|ttf|woff)$)
+    # Default precompilation behavior is "everything besides css/js", which breaks for license files
+    # Disable default behavior...
+    config.assets.precompile.shift
+
+    # ...and explicitly register the stuff we actually want to compile
+    config.assets.precompile.push(Proc.new do |path|
+      File.extname(path).in? [
+        '.html', '.erb', '.haml', #Templates
+        '.png', '.gif', '.jpg', '.jpeg', '.svg', #Images
+        '.eot', '.otf', '.svc', '.woff', '.ttf', #Fonts
+      ]
+    end)
   end
 end
