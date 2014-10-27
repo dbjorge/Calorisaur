@@ -1,0 +1,2 @@
+calorisaur = angular.module('calorisaur', [
+])
