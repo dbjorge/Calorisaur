@@ -23,7 +23,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'spring',        group: :development
 
 
-## Suggestions from angular-rails.com
+# The Heroku-recommended rails server
+gem 'unicorn'
 
 # Front-end dependency manager
 gem 'bower-rails'
