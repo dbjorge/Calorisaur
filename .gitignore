@@ -10,6 +10,7 @@ capybara-*.html
 **.orig
 rerun.txt
 pickle-email-*.html
+/.c9
 
 # It looks scary to include this, right? It's okay - in production, they just reference env vars
 # config/secrets.yml
@@ -17,6 +18,7 @@ pickle-email-*.html
 ## Environment normalisation:
 /.bundle
 /vendor/bundle
+/node_modules
 
 # these should all be checked in to normalise the environment:
 # Gemfile.lock, .ruby-version, .ruby-gemset
