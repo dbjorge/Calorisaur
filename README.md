@@ -1,3 +1,5 @@
+**⚠️ This project was never finished and is not maintained. It has been archived and will not receive future updates. ⚠️**
+
 Calorisaur
 ==========
 
